@@ -137,7 +137,7 @@ function twoArePositive(a, b, c) {
      function sumTwoSmallestNumbers(numbers) {  
   numbers.sort(function(a, b){return a - b; });
   return numbers[0] + numbers[1];
-// };
+ };
 
 // You are going to be given a word. Your job is to return the middle character of the word. If the word's length is odd, return the middle character. If the word's length is even, return the middle 2 characters.
 
@@ -214,14 +214,15 @@ let reversed = lower.split("").reverse().join("");
 // ...
 
 //Solutions
-SELECT film_id, title, special_features
-FROM film
-WHERE (
-  (ARRAY_TO_STRING(special_features, ',') LIKE '%Deleted Scenes%' AND ARRAY_TO_STRING(special_features, ',') NOT LIKE '%Behind the Scenes%')
-  OR (ARRAY_TO_STRING(special_features, ',') LIKE '%Behind the Scenes%' AND ARRAY_TO_STRING(special_features, ',') NOT LIKE '%Deleted Scenes%')
-)
-AND NOT ARRAY_TO_STRING(special_features, ',') LIKE '%Commentaries%'
-ORDER BY title, film_id ASC;
+// SELECT film_id, title, special_features
+// FROM film
+// WHERE (
+//   (ARRAY_TO_STRING(special_features, ',') LIKE '%Deleted Scenes%' AND ARRAY_TO_STRING(special_features, ',') NOT LIKE '%Behind the Scenes%')
+//   OR (ARRAY_TO_STRING(special_features, ',') LIKE '%Behind the Scenes%' AND ARRAY_TO_STRING(special_features, ',') NOT LIKE '%Deleted Scenes%')
+// )
+// AND NOT ARRAY_TO_STRING(special_features, ',') LIKE '%Commentaries%'
+// ORDER BY title, film_id ASC;
+
 
 
 
@@ -799,8 +800,7 @@ return result;
 return "Not a phone number"
 }
 }
-6 months agoRefactorDiscuss
-8 kyu
+
 // Thinkful - Logic Drills: Traffic light
 JavaScript:
 function updateLight(current) {
@@ -879,7 +879,7 @@ function lovefunc(flower1, flower2) {
     return false;
   }
 }
-You Got Change?
+// You Got Change?
 function giveChange(amount) {
   if (amount <= 0) {
     return [0, 0, 0, 0, 0, 0];
@@ -1063,7 +1063,7 @@ function createArray(number){
   }
   
   return newArray;
-}
+}   
 
 // Find the smallest integer in the array
 class SmallestIntegerFinder {
@@ -1072,6 +1072,7 @@ class SmallestIntegerFinder {
   return min;  
   }
 }
+
 
 // All Star Code Challenge #18
 function strCount(str, letter){  
@@ -1149,3 +1150,5 @@ var num = parseFloat(s);
 function multiply(a, b){
  return a * b;
 }
+
+
